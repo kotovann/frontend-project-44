@@ -16,7 +16,7 @@ export default (game) => {
       count += 1;
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.\nLet's try again, ${userName}!`);
-      count = 0;
+      return;
     }
   }
   console.log(`Congratulations, ${userName}!`);
